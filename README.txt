@@ -21,7 +21,7 @@ PORT=3000
 4. Start the backend:
 cd server
 npm install
-npm run server
+npm run dev
 
 5. Start the frontend:
 cd ..
