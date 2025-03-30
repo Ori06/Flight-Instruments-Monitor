@@ -1,0 +1,44 @@
+.adi-circle {
+  position: relative;
+  width: 270px;
+  height: 270px;
+  background-color: blue;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #000;
+  margin-top: -15px;
+}
+.adi-fill {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: green;
+  z-index: 1;
+  transition: height 1.5s ease-in-out;
+}
+.adi-fill.top {
+  top: 0;
+}
+.adi-fill.bottom {
+  bottom: 0;
+}
+.adi-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  z-index: 2;
+  transform: translateY(-1px);
+}
+.adi-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  height: 150%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  pointer-events: none;
+}

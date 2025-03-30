@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(4, 24, 22, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-family: 'Orbitron', sans-serif;
+}
+.dialog-box {
+  background: url("../assets/background.gif") no-repeat center center;
+  background-size: cover;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 600px;
+  color: black;
+  box-shadow: 0 0 20px #ffffff88, 0 0 40px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  text-align: center;
+  transform-origin: center center;
+  transform: scaleY(0);
+  opacity: 0;
+  animation: popOpen 0.6s ease-out forwards;
+}
+@keyframes popOpen {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scaleY(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+@keyframes popClose {
+  0% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+}
+.dialog-box.closing {
+  animation: popClose 0.4s ease-in forwards;
+}
+.dialog-box h2 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: black;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 0 10px #ffffff88;
+}
+.input-block {
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+.input-block label.text-label {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  margin-bottom: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 6px #ffffff66;
+  color: black;
+}
+.input-block span[dir="rtl"] {
+  margin-left: 0.4rem;
+  font-weight: 400;
+  color: black;
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.input-container input[type="text"] {
+  width: 16%;
+  padding: 0.4rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Orbitron', sans-serif;
+}
+.input-error {
+  margin-top: 0.4rem;
+  color: red;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.dialog-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.dialog-buttons button {
+  background-color: white;
+  color: black;
+  border: 2px solid #ffffff;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 0 6px #ffffff;
+}
+.dialog-buttons button:hover {
+  background-color: #2a2b75;
+  color: white;
+  box-shadow: 0 0 12px #ffffff;
+}
+span[dir="rtl"] {
+  font-family: 'Assistant Hebrew', sans-serif;
+  font-size: 1.05rem;
+  color: black;
+}
+.hebrew-title1 {
+  font-family: 'Assistant Hebrew', sans-serif;
+  font-size: 1.5rem !important;
+  margin-left: 0.5rem;
+  color: black !important;
+}
+.unit {
+  font-size: 0.7rem !important;
+  opacity: 0.75;
+  margin-left: 0.05rem;
+  color: black;
+}
+.label-text {
+  color: black;
+  font-family: 'Orbitron', sans-serif;
+}

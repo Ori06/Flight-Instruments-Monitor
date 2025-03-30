@@ -1,0 +1,81 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f1f7ff;
+  color: #213547;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(to right, #1a1b51, #2a2b75);
+  border-bottom: 1px solid #ccc;
+}
+.header-left {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+}
+.header-right {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1rem;
+  text-align: right;
+}
+.header-logo {
+  max-height: 80px;
+}
+.logo-container {
+  background-color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85px;
+  height: 85px;
+  box-sizing: border-box;
+}
+.hebrew-title {
+  font-size: 1.8rem !important;
+  font-weight: bold;
+  margin-right: 0.4rem;
+  color: #ffffff !important;
+}
+.english-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem !important;
+  margin-left: 0.5rem;
+  color: #ffffff;
+}
+.app-main {
+  flex: 1;
+  padding: 2rem;
+}
+.visual-layout {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.gauge-block {
+  text-align: center;
+  min-width: 180px;
+}
+.text-layout {
+  text-align: center;
+  margin: 2rem auto;
+}
+.app-footer {
+  background: linear-gradient(to right, #1a1b51, #2a2b75);
+  padding: 1rem;
+  text-align: center;
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+.visual-page {
+  width: 700px;
+  height: 700px;
+  margin: 2rem auto;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+.alt-rectangle {
+  width: 180px;
+  height: 611px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.alt-rectangle h2 {
+  margin-top: -2rem;
+}
+.side-gauges {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.square-gauge {
+  position: relative;
+  width: 320px;
+  height: 340px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+.hebrew-text {
+  font-size: 1.6rem !important;
+  font-weight: bold;
+  margin-right: 0.4rem;
+  color: #000000 !important;
+}

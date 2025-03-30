@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Assistant Hebrew';
+  src: url('../assets/fonts/Assistant-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../assets/fonts/Orbitron-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}

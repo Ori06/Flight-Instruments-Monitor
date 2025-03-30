@@ -1,0 +1,22 @@
+.hsi-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+}
+.hsi-underlay {
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  width: 150%;
+  height: 150%;
+}
+.hsi-overlay {
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  width: 150%;
+  height: 150%;
+  transform-origin: 50% 50%;
+  transition: transform 3s ease-in-out;
+}
